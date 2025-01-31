@@ -49,7 +49,7 @@ Indexes are created for fields that are frequently queried (e.g., Employee Name,
 
 Foreign Key constraints for relational integrity (e.g., Employee → Department, Employee → PerformanceReview).
 
-**Soft Delete: **Employees are marked as deleted, not physically removed.
+**Soft Delete:** Employees are marked as deleted, not physically removed.
 
 **Normalization:** Employee-Department relationship is one-to-many, Employee-PerformanceReview is one-to-many.
 
