@@ -1,8 +1,11 @@
 **Employee Management System**
+
 **Overview**
+
 This project is an Employee Management System designed to manage employee data, departments, and performance reviews. It includes CRUD operations for employees, department management, and performance review features. The system is built with an ASP.NET Core backend and a React.js frontend, ensuring a full-stack solution for managing employee data efficiently.
 
 **Features**
+
 1. Employee CRUD Operations
 Create: Add a new employee with all required fields.
 
@@ -30,6 +33,7 @@ Full-text search for employees by name.
 Paginated results for efficient loading.
 
 **Database Design**
+
 Tables
 Employee: Contains fields like Name, Email, Phone, Position, JoinDate, DepartmentID (Foreign Key), Status (active/inactive).
 
@@ -38,6 +42,7 @@ Department: Contains DepartmentName, ManagerID (Employee foreign key), and Budge
 PerformanceReview: Contains EmployeeID, ReviewDate, ReviewScore, ReviewNotes.
 
 **Indexes**
+
 Indexes are created for fields that are frequently queried (e.g., Employee Name, Department, Position, PerformanceScore).
 
 **Constraints**
@@ -47,7 +52,8 @@ Soft Delete: Employees are marked as deleted, not physically removed.
 
 Normalization: Employee-Department relationship is one-to-many, Employee-PerformanceReview is one-to-many.
 
-Performance Considerations
+**Performance Considerations**
+
 Optimized queries for listing employees, filtering, and aggregating (like calculating the average performance score).
 
 Pagination for listing employees and performance reviews to avoid performance hits on large datasets.
@@ -55,6 +61,7 @@ Pagination for listing employees and performance reviews to avoid performance hi
 Use of indexes on columns that are commonly searched or filtered.
 
 **Frontend**
+
 Built with React.js for a responsive and interactive user interface.
 
 Supports viewing, adding, updating, and deleting employee records.
